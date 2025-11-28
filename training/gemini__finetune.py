@@ -29,7 +29,7 @@ except Exception:
     _HAS_GCS = False
 
 # Configuration — set as env vars or edit here
-GEMINI_API_KEY = os.environ.get("AIzaSyANbB68kDQHza2iwYohQLnZ40cQfkxQeSE")  # if using API key auth
+GEMINI_API_KEY = os.environ.get("Enter Your own API Key")  # if using API key auth
 GEMINI_OAUTH = os.environ.get("GEMINI_OAUTH", "false").lower() == "true"
 GEMINI_FINETUNE_ENDPOINT = os.environ.get("GEMINI_FINETUNE_ENDPOINT", "https://api.gemini.example/v1/fineTunes")  # <-- REPLACE with real endpoint
 GCS_BUCKET = os.environ.get("GCS_BUCKET")  # optional GCS bucket to upload dataset
@@ -147,4 +147,5 @@ def poll_gemini_job_status(job_id: str, poll_endpoint_base: Optional[str] = None
             raise RuntimeError(f"Fine-tune job failed: {data}")
         if time.time() - start > timeout:
             raise TimeoutError("Timed out waiting for gemini fine-tune job")
+
         time.sleep(interval)

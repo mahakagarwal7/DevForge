@@ -1,0 +1,2 @@
+{"instruction":"Explain quadratic equation and plot a parabola","input":"","output":"Show equation: ax^2 + bx + c = 0. Explain discriminant b^2 - 4ac. Plot y = x^2 - 4 and show vertex at (0,-4) and roots at x=-2 and x=2."}
+{"instruction":"Show bubble sort with array [5,3,8,1]","input":"","output":"Visualize array as vertical bars, step through adjacent comparisons and swaps until sorted: [1,3,5,8]."}
